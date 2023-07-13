@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="mycanvas" height="400px" width="400px"></canvas>
+
+    <script>
+        debugger
+        let rect = document.getElementById("mycanvas");
+        let drwrect = rect.getContext("2d");
+        drwrect.fillStyle = "blue"
+        drwrect.fillRect(30, 60, 100, 100);
+    </script>
+</body>
+
+</html>
