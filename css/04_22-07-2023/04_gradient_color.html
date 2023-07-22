@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        .div1 {
+            /* direction : to bottom (default), to top, to left, to right */
+            background-image: linear-gradient(to left, red 50px, blue 125px, green 172px);
+        }
+
+        .div2 {
+            /* direction : circle at center(default), circle at top, circle at bottom, circle at right, circle at left */
+            background: radial-gradient(red 18px, blue 60px, green 104px);
+        }
+
+        .div3 {
+            background: conic-gradient(red 50deg, blue 150deg, green 270deg, red 358deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- gradient color is a combination of 2 or more color 
+        (1) linear, (2)  radial (3) conic 
+    -->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+
+</html>
