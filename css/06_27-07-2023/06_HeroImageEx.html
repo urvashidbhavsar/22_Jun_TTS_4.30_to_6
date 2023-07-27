@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        img {
+            height: 600px;
+            width: 100%;
+            filter: brightness(50%);
+        }
+
+        .HeroImage {
+            position: relative;
+        }
+
+        .HeroText {
+            position: absolute;
+            top: 130px;
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            text-transform: capitalize;
+            padding: 10px 0px;
+            text-shadow: 0px 0px 15px black;
+        }
+
+        p {
+            color: white;
+            text-shadow: 0px 0px 15px black;
+        }
+
+        .midtext {
+            width: 50%;
+            margin: auto;
+        }
+
+        .btns {
+            padding: 30px;
+        }
+
+        button {
+            margin: 10px;
+            height: 40px;
+            width: 150px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            font-size: 17px;
+            text-shadow: 0px 0px 15px black;
+        }
+
+        .btnLearn:hover {
+            border: 2px solid transparent;
+            background-color: black;
+        }
+
+        .btnRead:hover {
+            border: 2px solid transparent;
+            background-color: rgba(255, 255, 255, 0.367);
+        }
+
+        i {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="HeroImage">
+        <img src="images/wallpaper.jpg" alt="">
+        <div class="HeroText">
+            <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>you can help make a difference</h1>
+            <p class="midtext">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione molestias deserunt aut, ad
+                reprehenderit qui necessitatibus officiis magni natus rem? Eveniet, unde similique! Aperiam eveniet
+                ipsum sit modi eos natus.
+            </p>
+            <div class="btns">
+                <button class="btnLearn">Learn More
+                    <i class="fa-solid fa-angles-right fa-beat"></i>
+                </button>
+                <button class="btnRead">Read More
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
