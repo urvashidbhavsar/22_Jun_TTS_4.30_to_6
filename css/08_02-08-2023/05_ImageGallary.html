@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        /* img {
+            height: auto;
+            max-width: 100%;
+        } */
+
+        .div1 {
+            grid-column: 1 / span 2;
+            /* grid-column-start: 1;
+            grid-column-end: span 2; */
+        }
+
+        .div4 {
+            grid-row: 2 / span 2;
+            /* align-self: center; */
+            height: 100%;
+        }
+
+        .div3 {
+            grid-column: 4;
+            grid-row: 1 / span 2;
+            height: 100%;
+        }
+
+        .div6 {
+            grid-row: 2;
+            grid-column: 2 / span 2;
+            width: 100%;
+        }
+
+        .h-img {
+            height: 200px;
+            width: 100%;
+        }
+
+        .v-img {
+            height: 100%;
+            width: 260px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">
+            <img src="image/img3.jpg" alt="" class="h-img">
+        </div>
+        <div class="div2">
+            <img src="image/img4.jpg" alt="" class="h-img">
+        </div>
+        <div class="div3">
+            <img src="image/img1.jpg" alt="" class="v-img">
+        </div>
+        <div class="div4">
+            <img src="image/img2.jpg" alt="" class="v-img">
+        </div>
+        <div class="div5">
+            <img src="image/img5.jpg" alt="" class="h-img">
+        </div>
+        <div class="div6">
+            <img src="image/img6.jpg" alt="" class="h-img">
+        </div>
+        <div class="div7">
+            <img src="image/img7.jpg" alt="" class="h-img">
+        </div>
+        <div class="div8">
+            <img src="image/img8.jpg" alt="" class="h-img">
+        </div>
+        <div class="div9">
+            <img src="image/img9.avif" alt="" class="h-img">
+        </div>
+        <div class="div10">
+            <img src="image/img10.jpg" alt="" class="h-img">
+        </div>
+    </div>
+</body>
+
+</html>
