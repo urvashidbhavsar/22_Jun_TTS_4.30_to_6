@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .main {
+            height: 200px;
+            width: 200px;
+            margin: 180px auto;
+            display: grid;
+            align-content: center;
+            overflow: hidden;
+        }
+
+        .moveline {
+            height: 3px;
+            width: 0%;
+            background-color: red;
+            animation: moveLines 4s linear infinite;
+        }
+
+        @keyframes moveLines {
+            0% {
+                width: 0%;
+                transform: translateX(-210px);
+            }
+
+            100% {
+                width: 100%;
+                transform: translateX(210px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Loading....</h2>
+        <div class="moveline"></div>
+    </div>
+</body>
+
+</html>
