@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+        .OverEff {
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .OverText {
+            position: absolute;
+            /* top: 0; */
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.661);
+            color: white;
+            display: grid;
+            place-content: center;
+            text-align: center;
+            width: 0;
+            height: 100%;
+            overflow: hidden;
+            transition: 1s ease all;
+        }
+
+        .OverEff:hover .OverText {
+            height: 50%;
+        }
+
+        /* .OverEff:hover .OverText {
+            width: 100%;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="OverEff">
+        <img src="img1.jpg" alt="">
+        <div class="OverText">
+            <h2>Image 1</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
