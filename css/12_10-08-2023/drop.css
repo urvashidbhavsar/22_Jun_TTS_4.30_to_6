@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    background-color: crimson;
+    padding: 5px 20px;
+}
+
+.list ul {
+    display: flex;
+    gap: 20px;
+}
+
+.list ul li {
+    padding: 8px;
+}
+
+.list ul a {
+    color: white;
+    font-size: 20px;
+}
+
+.list ul span {
+    color: white;
+    transition: 0.5s ease all;
+}
+
+.list .dropmenu {
+    position: relative;
+}
+
+.list .showmenu {
+    position: absolute;
+    top: 42px;
+    display: none;
+    background-color: #ea7171;
+    height: auto;
+    width: 130px;
+}
+
+.list .showmenu li {
+    padding: 4px;
+}
+
+.list .showmenu li a {
+    color: black;
+}
+
+.list .dropmenu:hover .showmenu {
+    display: block;
+}
+
+.list .dropmenu:hover span {
+    transform: rotateX(180deg);
+}
+
+.cube {
+    height: 15px;
+    width: 15px;
+    background-color: #ea7171;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    transform: rotate(45deg);
+}
