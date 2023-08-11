@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 100px;
+            width: 100%;
+            background-color: blueviolet;
+        }
+
+        @media (max-width:576px) {
+            .mydiv {
+                background-color: chocolate;
+            }
+        }
+
+        @media (min-width:576px) {
+            .mydiv {
+                background-color: teal;
+            }
+        }
+
+        @media (min-width:768px) {
+            .mydiv {
+                background-color: brown;
+            }
+        }
+
+        @media (min-width:992px) {
+            .mydiv {
+                background-color: crimson;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .mydiv {
+                background-color: blueviolet;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv"></div>
+</body>
+
+</html>
