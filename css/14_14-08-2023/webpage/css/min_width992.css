@@ -1,0 +1,13 @@
+@media (min-width:992px) {
+    header .navbar .nav {
+        display: block;
+    }
+
+    header .navbar .search form {
+        display: block;
+    }
+
+    header .navbar .search .togglebtn {
+        display: none;
+    }
+}
