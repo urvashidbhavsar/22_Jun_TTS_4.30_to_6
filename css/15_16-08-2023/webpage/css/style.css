@@ -1,0 +1,368 @@
+/* ============== common css =========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.large-container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.small-container {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+/* ================== header =================== */
+header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    /* filter: blur(10px); */
+    backdrop-filter: blur(20px);
+    z-index: 1111;
+}
+
+header .navbar-p {
+    padding: 10px 0px;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar .logo {
+    flex: 0.7;
+}
+
+header .navbar .logo h1 {
+    color: white;
+}
+
+header .navbar .logo h1 span {
+    transform: rotate(30deg);
+}
+
+header .navbar .nav {
+    flex: 3;
+}
+
+header .navbar .nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+header .navbar .nav ul li {
+    padding: 5px;
+}
+
+header .navbar .nav ul li a {
+    color: white;
+    text-transform: uppercase;
+}
+
+header .navbar .search {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+header .navbar .search input[type="text"] {
+    height: 40px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 40px;
+}
+
+header .navbar .search input[type="text"]:focus-visible {
+    outline: none;
+    border: 1px solid gray;
+}
+
+header .navbar .search form {
+    position: relative;
+}
+
+header .navbar .search form button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 16px;
+    color: #fb811e;
+}
+
+header .navbar .search .togglebtn {
+    display: none;
+}
+
+header .navbar .search .togglebtn button {
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+}
+
+/* ========= homepage ======================== */
+.homepage .homepage-p {
+    padding: 160px 65px;
+}
+
+.homepage .home-flex {
+    display: flex;
+}
+
+.homepage .home-flex .home-left-text {
+    flex: 1;
+    background-color: #fb811e;
+}
+
+.homepage .home-flex .leftInfo {
+    padding: 30px;
+}
+
+.homepage .home-flex .home-left-text h1 {
+    font-size: 45px;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.homepage .home-flex .home-left-text h1 span {
+    font-weight: 100;
+}
+
+.homepage .home-flex .home-left-text p {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.homepage .home-flex .home-left-text p span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.homepage .home-flex .home-left-text button {
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 40px;
+    font-size: 16px;
+    transition: 0.5s ease all;
+}
+
+.homepage .home-flex .home-left-text button:hover {
+    background-color: white;
+    color: #fb811e;
+}
+
+.homepage .home-flex .home-right-img {
+    flex: 1;
+    background: url(../images/banner1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.homepage .home-flex .home-right-img .gridBox {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 80px 20px;
+}
+
+.homepage .home-flex .home-right-img .image {
+    align-self: center;
+    height: 255px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.homepage .home-flex .home-right-img .image img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.homepage .home-flex .home-right-img .image .imgText {
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.664);
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 33%;
+    padding: 10px;
+    line-height: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.homepage .home-flex .home-right-img .image a {
+    color: #fb811e;
+}
+
+/* =============================== */
+
+.AboutRestro .about-p {
+    padding: 70px 0px;
+}
+
+.AboutRestro .flexbox {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.AboutRestro .flexbox .moveimage {
+    flex: 1;
+    display: flex;
+}
+
+.AboutRestro .flexbox .moveimage img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.AboutRestro .flexbox .moveimage .img1 {
+    transition: 1s all ease;
+}
+
+.AboutRestro .flexbox .moveimage .img2 {
+    transform: translate(-141px, 55px);
+    transition: 1s all ease;
+}
+
+.AboutRestro .flexbox .moveimage:hover .img1 {
+    transform: translateY(55px);
+}
+
+.AboutRestro .flexbox .moveimage:hover .img2 {
+    transform: translate(-100px, 0);
+}
+
+.AboutRestro .flexbox .aboutres {
+    flex: 1;
+}
+
+.AboutRestro .flexbox .aboutres h1 {
+    font-size: 45px;
+    color: #fb811e;
+}
+
+.AboutRestro .flexbox .aboutres p {
+    font-size: 22px;
+}
+
+.AboutRestro .flexbox .address {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    line-height: 23px;
+}
+
+.AboutRestro .flexbox .address .add {
+    font-size: 18px;
+}
+
+.AboutRestro .flexbox .address span {
+    font-size: 25px;
+    color: #fb811e;
+}
+
+/* ================================== */
+.dishPrice {
+    background-color: #009f4d;
+}
+
+.dishPrice .dispPrice-p {
+    padding: 60px 0px;
+}
+
+.dishPrice .priceFlex {
+    display: flex;
+}
+
+.dishPrice .priceFlex .price {
+    flex: 1;
+    color: white;
+}
+
+.dishPrice .priceFlex .price h1 {
+    font-size: 45px;
+    text-transform: capitalize;
+}
+
+.dishPrice .priceFlex .price p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.dishPrice .priceFlex .price .priceInfo {
+    width: 450px;
+}
+
+.dishPrice .priceFlex .price .priceList {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    padding: 10px 0px;
+}
+
+.dishPrice .priceFlex .price .priceList h3 {
+    font-size: 23px;
+}
+
+.dishPrice .priceFlex .price button {
+    height: 45px;
+    width: 130px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    font-size: 17px;
+    transition: 0.5s ease all;
+}
+
+.dishPrice .priceFlex .price button:hover {
+    background-color: white;
+    color: #fb811e;
+}
+
+.dishPrice .priceFlex .dishes {
+    flex: 1;
+}
+
+.dishPrice .priceFlex .dishes img {
+    height: auto;
+    max-width: 100%;
+}
