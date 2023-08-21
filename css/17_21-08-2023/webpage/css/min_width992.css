@@ -1,0 +1,40 @@
+@media (min-width:992px) {
+    .large-container {
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+
+    header .navbar .nav {
+        display: block;
+    }
+
+    header .navbar .search form {
+        display: block;
+    }
+
+    header .navbar .search .togglebtn {
+        display: none;
+    }
+
+    .homepage .homepage-p {
+        padding: 160px 65px;
+    }
+
+    .AboutRestro .flexbox {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .menuitems .gridbox {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .clientRev .client-pd {
+        padding: 60px 40px;
+    }
+
+    footer .mainfooter {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,12 @@
+@media (min-width:1200px) {
+    .large-container {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    /* header value inherit from min width 992px  */
+
+    footer .mainfooter {
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+    }
+}

@@ -1,0 +1,62 @@
+@media (min-width:576px) {
+    .large-container {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    header .navbar .nav {
+        display: none;
+    }
+
+    header .navbar .search form {
+        display: none;
+    }
+
+    header .navbar .search .togglebtn {
+        display: block;
+    }
+
+    .homepage .home-flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .homepage .home-flex .leftInfo {
+        padding: 0;
+    }
+
+    .homepage .homepage-p {
+        padding: 50px 20px;
+    }
+
+    .AboutRestro .flexbox {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .dishPrice .priceFlex {
+        flex-direction: column;
+    }
+
+    .menuitems .gridbox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menuitems .gridbox .menus2 {
+        grid-row: 1 / span 2;
+        grid-column: 2;
+    }
+
+    .clientRev .client-pd {
+        padding: 60px 0;
+    }
+
+    .clientRev .clientFlex {
+        flex-direction: column;
+    }
+
+    footer .mainfooter {
+        grid-template-columns: 1fr;
+    }
+}
