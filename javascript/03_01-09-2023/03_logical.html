@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = 40;
+        let res;
+
+        res = (x > 45 && x < 45)
+        console.log(res);
+
+        res = (x > 45 || x < 45)
+        console.log(res);
+
+        res = !(x > 45 || x < 45)
+        console.log(res);
+    </script>
+    <!-- 
+        && (logical)
+        Condition1          condition2            res
+    (1) true                true                  true
+    (2) true                false                 false
+    (3)  false              true                  false
+    (4)  false              false                 false
+
+        || (logical)
+     Condition1          condition2            res
+    (1) true                true                  true
+    (2) true                false                 true
+    (3)  false              true                  true
+    (4)  false              false                 false
+     -->
+</body>
+
+</html>
