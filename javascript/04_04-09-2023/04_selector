@@ -1,0 +1,19 @@
+(1) getElementById()
+(2) querySelector()
+(3) querySelectorAll() 
+(4) getElementByClassName()
+(5) getElementByTag()
+(6) getElementByName()
+
+to print value on structure used 2 properties :
+(1) innerHTML 
+(2) innerText
+
+to add css on webpage using js used property:
+classList 
+
+to add or remove values from webpage use predefine functions: 
+(1) add()
+(2) remove()
+(3) toggle()
+(4) contains()

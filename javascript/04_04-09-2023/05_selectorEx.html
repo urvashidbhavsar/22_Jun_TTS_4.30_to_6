@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p class="p4"></p>
+    <div></div>
+    <script>
+        document.getElementById("p1").innerText = "<b>Hello world</b>"
+        document.getElementById("p2").innerHTML = "<b>Hello world</b>"
+        // querySelector() select class, id and element
+        document.querySelector("#p3").innerText = "select by id"
+        document.querySelector(".p4").innerHTML = "select by class"
+        document.querySelector("div").innerHTML = "select by element"
+    </script>
+</body>
+
+</html>

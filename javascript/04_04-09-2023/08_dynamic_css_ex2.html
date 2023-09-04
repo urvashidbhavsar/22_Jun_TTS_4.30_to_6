@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 200px;
+            width: 200px;
+            background-color: coral;
+            border: 2px solid black0;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1" onclick="addDiv()">Add()</button>
+    <button id="btn2" onclick="removeDiv()">Remove()</button>
+    <button id="btn3" onclick="toggleDiv()">Toggle()</button>
+    <hr>
+    <div class="div1"></div> <br><br>
+
+    <script>
+        function addDiv() {
+            let div = document.querySelector(".div1")
+            div.classList.add("mydiv")
+        }
+        function removeDiv() {
+            let div = document.querySelector(".div1")
+            div.classList.remove("mydiv")
+        }
+        function toggleDiv() {
+            let div = document.querySelector(".div1")
+            div.classList.toggle("mydiv")
+        }
+    </script>
+</body>
+
+</html>
