@@ -1,0 +1,22 @@
+(1) window object 
+    there is 5 window object 
+    1. alert()
+    2. confirm()
+    3. prompt()
+    4. open()
+    5. close() 
+
+(2) history object 
+    1. go()
+    2. back()
+    3. forword()
+
+(3) screen object => properties 
+(4) navigator object => properties
+
+
+BOM = > browser object model 
+
+DOM = > document object model 
+
+DOM is a part of BOM.
