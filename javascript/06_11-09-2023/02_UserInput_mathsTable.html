@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .disp {
+            height: auto;
+            width: 200px;
+            padding: 10px;
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Enter Table No : </label>
+        <input type="text" name="" id="num">
+        <button onclick="return tableDisplay()">Display</button>
+    </form>
+    <div id="DisplayTable" class="disp"></div>
+
+    <script>
+        // isNaN = is not a number 
+        function tableDisplay() {
+            let tableNo = document.getElementById("num").value;
+            let div = document.getElementById("DisplayTable")
+            if (tableNo == "") {
+                alert("Enter Table no")
+            } else if (isNaN(tableNo)) {
+                alert("Enter Number");
+            } else {
+                var i = 1, res = "";
+                for (i = 1; i <= 10; i++) {
+                    res = res + "<p>" + tableNo + "&Cross;" + i + "=" + tableNo * i + "</p>";
+                }
+                div.innerHTML = res
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>

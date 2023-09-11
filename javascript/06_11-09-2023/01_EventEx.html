@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+            color: darkblue;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 onmouseover="addCss()" onmouseout="removeCss()">Hover me!!!!</h1>
+    <!-- ======================================= -->
+    <label for="">Enter any value : </label>
+    <!-- onkeydown="msg()" onkeyup="msg()" onkeypress="msg()" -->
+    <input type="text" name="" id="inputval" onkeyup="msg()">
+    <!-- ======================================= -->
+    <br><br>
+    <label for="">Enter Number : </label>
+    <input type="text" name="" id="num" onblur="inputval()" onchange="inputval()">
+    <p id="printval"></p>
+
+    <script>
+        function addCss() {
+            let head = document.querySelector("h1")
+            head.classList.add("heading")
+        }
+        function removeCss() {
+            let head = document.querySelector("h1")
+            head.classList.remove("heading")
+        }
+        function msg() {
+            alert("Press any key")
+        }
+        function inputval() {
+            let num = document.getElementById("num").value;
+            if (num == "") {
+                alert("Enter number")
+            } else {
+                document.getElementById("printval").innerHTML = num
+            }
+        }
+    </script>
+</body>
+
+</html>

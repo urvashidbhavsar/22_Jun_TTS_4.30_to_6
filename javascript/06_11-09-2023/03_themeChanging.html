@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            background-color: #050537;
+        }
+
+        .header-m {
+            margin: 0px 80px;
+        }
+
+        .header-p {
+            padding: 20px 0px;
+        }
+
+        .topheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .icon {
+            font-size: 25px;
+        }
+
+        h1 {
+            font-size: 38px;
+        }
+
+        /* create random css which is not include in structure */
+        .dark-theme {
+            background-color: #050537;
+            color: white;
+        }
+
+        .dark-theme .header {
+            background-color: white;
+        }
+
+        .dark-theme .header .topheader {
+            color: #050537
+        }
+
+        .dark-theme a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <div class="header-m header-p">
+            <div class="topheader">
+                <div class="logo">
+                    <h1><span class="fa-solid fa-umbrella-beach"></span>
+                        Logo</h1>
+                </div>
+                <div class="icon">
+                    <div>
+                        <span class="fa-regular fa-moon" id="cicon"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>Hello User, we learn change <a href="">Theme</a></h1>
+    </section>
+
+    <script>
+        // target = body section 
+        // perform = moon icon 
+        let change = document.getElementById("cicon");
+        change.addEventListener("click", function () {
+            document.body.classList.toggle("dark-theme")
+
+            if (document.body.classList.contains("dark-theme") == true) {
+                change.classList.remove("fa-moon")
+                change.classList.add("fa-sun");
+            } else {
+                change.classList.remove("fa-sun")
+                change.classList.add("fa-moon")
+            }
+        })
+    </script>
+</body>
+
+</html>
