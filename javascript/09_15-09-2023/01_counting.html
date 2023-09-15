@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 150px;
+            width: 150px;
+            background-color: teal;
+            color: white;
+            display: grid;
+            place-content: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="count"></div>
+    </div>
+
+    <script>
+        // setInterval() => set timing
+        // clearInterval() => set timing clear
+
+        let start = 1000;
+        let count = setInterval(() => {
+            let div = document.getElementById("count");
+            div.innerHTML = ++start;
+            if (start == 1500) {
+                clearInterval(count)
+            }
+        }, 60)
+
+
+    </script>
+</body>
+
+</html>

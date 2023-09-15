@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- array is a collection of similer type of data -->
+
+    <script>
+        let fruits = ["bananas", "kiwi", "apple", "grapes", "guava"]
+        console.log(fruits);
+
+        // to print single array
+        console.log(fruits[0]);
+        console.log(fruits[1]);
+        console.log(fruits[2]);
+        console.log(fruits[3]);
+        console.log(fruits[4]);
+        console.log("===========================");
+        // to print all at a time use loop 
+        let f;
+        for (f of fruits) {
+            console.log(f);
+        }
+        fruits.pop()
+        console.log(fruits);
+
+        fruits.push("pineapple")
+        console.log(fruits);
+    </script>
+</body>
+
+</html>

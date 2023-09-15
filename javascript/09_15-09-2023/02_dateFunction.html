@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3 id="disp"></h3>
+    <h3 id="disp1"></h3>
+    <h3 id="disp2"></h3>
+    <script>
+        var d = new Date()
+
+        document.getElementById("disp").innerHTML = d;
+        document.getElementById("disp1").innerHTML = d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear();
+        document.getElementById("disp2").innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+    </script>
+</body>
+
+</html>

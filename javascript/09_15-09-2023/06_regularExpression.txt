@@ -1,0 +1,8 @@
+=> regular expression means some specific symbolic syntax.
+=> use to match pattern
+
+number = [0-9]
+[] = check between square bracket values 
+/... / = use to write expression.
+^ = use to check start value 
++$ / *$ = check value at the end of expression

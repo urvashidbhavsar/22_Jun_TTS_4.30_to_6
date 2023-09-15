@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- object -->
+    <script>
+        let person = {
+            firstname: "Urvashi",
+            lastname: "Bhavsar",
+            mobileNo: 78544433222,
+            Birthdate: "30-12-1999"
+        }
+        // document.write(person)
+        console.log(person);
+        // to print value saparatly
+        console.log(person.firstname);
+        console.log(person.lastname);
+
+        console.log("===================");
+        // to print values at a once time 
+        for (const per in person) {
+            console.log(per + " => " + person[per]);
+        }
+    </script>
+</body>
+
+</html>
