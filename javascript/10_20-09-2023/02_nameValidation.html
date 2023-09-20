@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #msg {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>Name : </td>
+                <td>
+                    <input type="text" name="uname" id="username" onblur="return checkName()"
+                        onkeyup="return checkNameEx()">
+                </td>
+                <td>
+                    <span id="msg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button onclick="return checkName()">Click</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        // click & blur event 
+        function checkName() {
+            let unm = document.getElementById("username").value;
+            if (unm == "" || unm == null) {
+                document.getElementById("msg").innerHTML = "Enter name";
+                return false
+            }
+        }
+        // keyboard event 
+        function checkNameEx() {
+            let unm = document.getElementById("username").value;
+            let nameEx = /^[a-zA-Z]+$/
+            if (!(unm.match(nameEx)) || unm.length < 2) {
+                document.getElementById("msg").innerHTML = "Invalid value!!!"
+                return false
+            } else {
+                document.getElementById("msg").innerHTML = ""
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>

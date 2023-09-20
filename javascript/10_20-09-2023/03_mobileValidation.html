@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>Mobile No : </td>
+                <td>
+                    <input type="text" name="mobile" id="mobileno" onblur="return checkNumber()"
+                        onkeyup="return checkNumEx()" maxlength="10">
+                </td>
+                <td>
+                    <span id="msg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button onclick="return checkNumber()">Click</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        // click & blur event 
+        function checkNumber() {
+            let no = document.getElementById("mobileno").value;
+            if (no == "" || no == null) {
+                document.getElementById("msg").innerHTML = "Enter Number"
+                return false
+            }
+        }
+
+        // keyboard event 
+        function checkNumEx() {
+            let no = document.getElementById("mobileno").value;
+            let start = /^[6-9]/
+            let numex = /^[0-9]*$/
+            if (!(numex.test(no)) || !(start.test(no)) || no.length < 10 ) {
+                document.getElementById("msg").innerHTML = "invalid number!!!"
+                return false;
+            } else {
+                document.getElementById("msg").innerHTML = ""
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
