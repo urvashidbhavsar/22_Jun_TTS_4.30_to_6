@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <table>
+            <tr>
+                <td>Email : </td>
+                <td>
+                    <input type="text" name="email" id="mail" onblur="return checkmail()"
+                        onkeyup="return checkMailEx()">
+                </td>
+                <td>
+                    <span id="msg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button onclick="return checkmail()">Click Here</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        // click & blur event
+        function checkmail() {
+            let mail = document.getElementById("mail").value;
+            if (mail == "" || mail == null) {
+                document.getElementById("msg").innerHTML = "Enter mail"
+                return false
+            }
+        }
+        // regular expression keyboard event
+        function checkMailEx() {
+            let mail = document.getElementById("mail").value;
+            // copy expression from : https://www.w3resource.com/
+            let mailEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3})+$/;
+            if (mailEx.test(mail)) {
+                document.getElementById("msg").innerHTML = ""
+                return false
+            } else {
+                document.getElementById("msg").innerHTML = "Invalid mail!!!"
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>
