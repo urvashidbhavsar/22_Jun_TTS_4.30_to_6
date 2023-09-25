@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.registerForm {
+    width: 700px;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.msg {
+    color: red;
+}
+
+h2 {
+    padding-bottom: 30px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 20px;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+input[type="text"],
+select {
+    height: 30px;
+    width: 90%;
+    padding: 0px 7px;
+    font-size: 14px;
+    border: 1px solid gray;
+}
+
+textarea {
+    width: 90%;
+    padding: 2px 7px;
+    font-size: 14px;
+    border: 1px solid gray;
+}
+
+input[type="text"]:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: none;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    background-color: darkturquoise;
+    color: black;
+    font-size: 16px;
+    border: 2px groove red;
+    cursor: pointer;
+}
+
+.highlight {
+    border: 1px solid red !important;
+}
