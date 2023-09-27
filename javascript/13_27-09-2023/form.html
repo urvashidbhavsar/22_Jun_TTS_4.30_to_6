@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="registerForm">
+        <h2>Register Here</h2>
+        <form action="#">
+            <!-- firstname -->
+            <div class="row">
+                <div class="col">Firstname</div>
+                <div class="col">
+                    <input type="text" name="" id="fname" onblur="return blankCheck(this, 'msg1')"
+                        onkeyup="return nameEx(this, 'msg1')">
+                </div>
+                <div class="col">
+                    <span id="msg1" class="msg"></span>
+                </div>
+            </div>
+            <!-- lastname -->
+            <div class="row">
+                <div class="col">Lastname</div>
+                <div class="col">
+                    <input type="text" name="" id="lname" onblur="return blankCheck(this, 'msg2')"
+                        onkeyup="return nameEx(this,'msg2')">
+                </div>
+                <div class="col">
+                    <span id="msg2" class="msg"></span>
+                </div>
+            </div>
+            <!-- gender -->
+            <div class="row">
+                <div class="col">Gender</div>
+                <div class="col">
+                    <input type="radio" name="gn" id="male" onblur="return selectOption(this, 'msg3')">
+                    <label for="">Male</label>
+                    <input type="radio" name="gn" id="female" onblur="return selectOption(this,'msg3')">
+                    <label for="">Female</label>
+                </div>
+                <div class="col">
+                    <span id="msg3" class="msg"></span>
+                </div>
+            </div>
+            <!-- Address -->
+            <div class="row">
+                <div class="col">Address</div>
+                <div class="col">
+                    <textarea name="" id="addr" cols="30" rows="3" onblur="return blankCheck(this,'msg4')"
+                        placeholder="address in between 35 to 200 letters" onkeyup="return addressLength(this, 'msg4')"
+                        maxlength="200"></textarea>
+                </div>
+                <div class="col">
+                    <span id="msg4" class="msg"></span>
+                </div>
+            </div>
+            <!-- City -->
+            <div class="row">
+                <div class="col">City</div>
+                <div class="col">
+                    <select name="" id="citylist" onblur="return dropdwn(this, 'msg5')">
+                        <option value="-1">--select--</option>
+                        <option value="">Surat</option>
+                        <option value="">Baroda</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <span id="msg5" class="msg"></span>
+                </div>
+            </div>
+            <!-- Mobile no -->
+            <div class="row">
+                <div class="col">Mobile No</div>
+                <div class="col">
+                    <input type="text" name="" id="mobile" onblur="return blankCheck(this, 'msg6')"
+                        onkeyup="return  mobileEx(this, 'msg6')" maxlength="10">
+                </div>
+                <div class="col">
+                    <span id="msg6" class="msg"></span>
+                </div>
+            </div>
+            <!-- Email -->
+            <div class="row">
+                <div class="col">Email Id</div>
+                <div class="col">
+                    <input type="text" name="" id="mail" onblur="return blankCheck(this, 'msg7')"
+                        onkeyup="return emailEx(this, 'msg7')">
+                </div>
+                <div class="col">
+                    <span id="msg7" class="msg"></span>
+                </div>
+            </div>
+            <!-- Password -->
+            <div class="row">
+                <div class="col">Password</div>
+                <div class="col show">
+                    <input type="password" name="" id="pass" onblur="return blankCheck(this, 'msg8')"
+                        onkeyup="return checkpass(this, 'msg8')" placeholder="password must be 8 to 15 letters"
+                        maxlength="15">
+                    <div class="showIcon" onclick="showPass('pass','icon')">
+                        <span class="bi bi-eye-fill" id="icon"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <span id="msg8" class="msg"></span>
+                </div>
+            </div>
+            <!-- Confirm Password -->
+            <div class="row">
+                <div class="col">Confirm Password</div>
+                <div class="col show">
+                    <input type="password" name="" id="cpass" onblur="return blankCheck(this, 'msg9')"
+                        onkeyup="return comparePass('pass', this, 'msg9')">
+                    <div class="showIcon" onclick="showPass('cpass','icon1')">
+                        <span class="bi bi-eye-fill" id="icon1"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <span id="msg9" class="msg"></span>
+                </div>
+            </div>
+            <!-- button  -->
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <button type="submit" onclick="return formValid()">Submit</button>
+                    <button onclick="return PrintPage()">Print Page</button>
+                </div>
+                <div class="col"></div>
+            </div>
+        </form>
+    </div>
+    <script src="formValidation.js"></script>
+</body>
+
+</html>
