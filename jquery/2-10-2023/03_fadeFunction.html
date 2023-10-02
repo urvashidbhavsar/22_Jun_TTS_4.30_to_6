@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 100px;
+            width: 100px;
+            background-color: darkblue;
+            display: none;
+        }
+
+        .div2 {
+            height: 100px;
+            width: 100px;
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- fade function is effect on opacity -->
+    <button id="btn1">FadeIn</button>
+    <button id="btn2">FadeOut</button>
+    <button id="btn3">FadeToggle</button>
+    <hr>
+    <div class="div1"></div>
+    <div class="div2"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".div1").fadeIn(2000)
+            })
+            $("#btn2").click(function () {
+                $(".div1").fadeOut(2000)
+            })
+            $("#btn3").click(function () {
+                $(".div2").fadeToggle(2000)
+            })
+        })
+    </script>
+</body>
+
+</html>
