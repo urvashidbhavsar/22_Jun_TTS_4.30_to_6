@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 300px;
+            width: 200px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".div1").slideUp(3000);
+
+            $(".div1").mouseover(function () {
+                $(".div1").stop()
+            })
+            $(".div1").mouseout(function () {
+                $(".div1").slideUp(3000);
+            })
+
+        })
+    </script>
+</body>
+
+</html>
