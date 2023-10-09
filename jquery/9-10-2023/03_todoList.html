@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <input type="text" name="" id="todoval">
+        <button id="btn1">Add value</button>
+    </form>
+    <ul>
+        <li>List 1</li>
+    </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $todo = $("#todoval").val();
+                if ($todo == "" || $todo == null) {
+                    alert("Enter value")
+                } else {
+                    $("ul").append("<li>" + $todo + "</li>")
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

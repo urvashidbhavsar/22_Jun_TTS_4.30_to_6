@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head1 {
+            color: coral;
+            background-color: crimson;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+        }
+
+        .head2 {
+            color: darkorchid;
+            background-color: lightblue;
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- addClass(), removeClass(), toggleClass() -->
+    <button id="btn1">Add class</button>
+    <button id="btn2">Remove Class</button>
+    <button id="btn3">Toggle Class</button>
+    <hr>
+    <h1 class="heading1">Hello World</h1>
+    <h1 class="heading2">Hello World</h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".heading1").addClass("head1")
+            })
+            $("#btn2").click(function () {
+                $(".heading1").removeClass("head1")
+            })
+            $("#btn3").click(function () {
+                $(".heading2").toggleClass("head2")
+            })
+        })
+    </script>
+</body>
+
+</html>
