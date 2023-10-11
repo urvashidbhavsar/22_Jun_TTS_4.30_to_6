@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            height: 620px;
+            width: 100%;
+        }
+
+        .bx-wrapper {
+            border: none;
+            box-shadow: none;
+        }
+
+        .bx-wrapper .bx-pager {
+            position: absolute;
+            bottom: 23px;
+            width: 20%;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            background-color: #FFC107;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bxslider">
+        <div class="image">
+            <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
+                alt="" title="image1">
+        </div>
+        <div class="image">
+            <img src="https://www.vieribottazzini.com/wp-content/uploads/X1DII1_00190_slide.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="https://previews.123rf.com/images/veteranu/veteranu1706/veteranu170600001/80489987-beautiful-view-of-nature-with-woman-in-blue-skirt-with-her-hands-held-back-looking-into-the-sky.jpg"
+                alt="">
+        </div>
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGVuc3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                alt="">
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".bxslider").bxSlider({
+                mode: "horizontal",
+                randomStart: false,
+                infiniteLoop: false,
+                hideControlOnEnd: true,
+                captions: true,
+                pager: true,
+                pagerType: "full",
+                // pagerShortSeparator: "-"
+                controls: true,
+                auto: true,
+                autoHover: true,
+            })
+        })
+    </script>
+</body>
+
+</html>
