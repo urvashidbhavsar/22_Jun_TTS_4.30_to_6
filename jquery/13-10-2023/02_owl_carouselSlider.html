@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- owl carousel css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        img {
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_640.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/3cf61c1011912a2173ea4dfa260f1108/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://i.insider.com/60638bd66183e1001981966a?width=1136&format=jpeg" alt="">
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- owl carosel js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                margin: 10,
+                autoHeight: false,
+                loop: true
+            })
+        })
+    </script>
+</body>
+
+</html>

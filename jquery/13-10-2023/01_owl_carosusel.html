@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- owl carousel css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        img {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_640.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/3cf61c1011912a2173ea4dfa260f1108/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://i.insider.com/60638bd66183e1001981966a?width=1136&format=jpeg" alt="">
+        </div>
+        <div class="item">
+            <img src="https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="https://media.istockphoto.com/id/1433211776/photo/woman-silhouette-in-front-of-the-ocean-at-sunset.webp?b=1&s=170667a&w=0&k=20&c=xGzw_4wTjK0uKJLS42lR7xPsD7tGRTrx-mWBl0ylih4="
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGV3fGVufDB8fDB8fHww&w=1000&q=80"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://media.istockphoto.com/id/1048784554/photo/hot-air-balloons-over-cappadocia-at-sunriseturkey.jpg?s=612x612&w=0&k=20&c=T8qc6izpyeHK3qmWqSNd9fri2X6-V7G_kM_KhlWKyuI="
+                alt="">
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- owl carosel js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                center: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                // autoplaySpeed: true,
+                autoplaySpeed: 1000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    992: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

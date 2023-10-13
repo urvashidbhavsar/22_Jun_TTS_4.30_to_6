@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            padding: 10px;
+            border: 1px solid black;
+            width: fit-content;
+            margin: 5px;
+        }
+
+        .mypara {
+            border: 1px solid black;
+            width: fit-content;
+            padding: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- there are 4 wrapping function -->
+    <!-- wrap(), wrapAll(), wrapInner(), unwrap() -->
+    <button id="btn1">Wrap</button>
+    <hr>
+    <div class="innerDiv">inner Div</div>
+    <div class="innerDiv">inner Div</div>
+    <hr>
+
+    <button id="btn2">WrapAll</button>
+    <hr>
+    <div class="innerDiv1">inner Div</div>
+    <div class="innerDiv1">inner Div</div>
+    <hr>
+
+    <button id="btn3">WrapInner</button>
+    <hr>
+    <div class="innerDiv2">inner Div</div>
+    <div class="innerDiv2">inner Div</div>
+    <hr>
+
+    <button id="btn4">Unwrap</button>
+    <hr>
+    <div class="mypara">
+        <p>mypara1</p>
+        <p>mypara2</p>
+    </div>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".innerDiv").wrap("<div class='mydiv'></div>")
+            })
+            $("#btn2").click(function () {
+                $(".innerDiv1").wrapAll("<div class='mydiv'></div>")
+            })
+            $("#btn3").click(function () {
+                $(".innerDiv2").wrapInner("<b></b>")
+            })
+            $("#btn4").click(function () {
+                $("p").unwrap()
+            })
+        })
+    </script>
+</body>
+
+</html>
