@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flexex/flex.css">
+</head>
+
+<body>
+    <section id="loader"></section>
+    <section id="content"></section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#loader").load("flexex/animation.html", function () {
+                $("#loader").fadeOut(3000, function () {
+                    $("#content").load("flexex/flexex.html")
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
