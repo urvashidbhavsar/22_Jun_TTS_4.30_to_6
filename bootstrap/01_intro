@@ -1,0 +1,18 @@
+bootstrap is a css library but it has also some js library.
+
+there are predefine classes are given in bootstrap.
+
+cdn : 
+(1) download offline package
+(2) use online cdn
+
+currently bootstrap5 is working.
+
+major diff in between bootstrap4 and bootstrap5.
+(1) in bootstrap4 there is 5 responsive tiers.
+    while in bootstrap5 there is 6 responsive tiers.
+
+(2) in bootstrap4 for some components use jquery library code
+    while, in bootstrap5 there completly removed jquery library code so now all code in vanilla js.
+
+website : getbootstrap.com
