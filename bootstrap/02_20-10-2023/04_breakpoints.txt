@@ -1,0 +1,14 @@
+    css media query                     bootstrap class 
+(1)  max-width:576px                        -
+(2)  min-width:576px                        sm (small screen)
+(3)  min-width:768px                        md (medium screen)
+(4) min-width:992px                         lg (large screen)
+(5) min-width:1200px                        xl (extra large)
+(6) min-width:1400px                        xxl (extra extra large)
+
+bootstrap provide main powerfull flexbox grid system.
+(1) container / container-fluid 
+(2) row (set flexible value) 
+(3) col 
+
+grid system provide 12 col system
