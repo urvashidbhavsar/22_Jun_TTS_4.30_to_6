@@ -1,0 +1,16 @@
+element name                            bootstrap class 
+------------------------------------------------------
+(1) label                                   form-label
+(2) input type = text, textarea, password   form-control 
+date, time, file etc.
+(3) input type = radio and checkbox         
+    - main div class                        form-check 
+    - input type                            form-check-input 
+    - label of input type                   form-check-label 
+    - if we want buttons horizontally       form-check-inline 
+(4) select/option                           form-select 
+(5) input type color                        form-control-color & form-control 
+(6) to join element        
+    - in parent div                         input-group 
+    - input type = text                     form-control 
+    - label, dropdowm, button               input-group-text 
