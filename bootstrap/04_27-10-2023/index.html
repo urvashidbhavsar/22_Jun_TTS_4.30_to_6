@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <!-- google font -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h3>Real<span>Houzing</span></h3>
+                </a>
+                <div class="themeicon d-flex gap-3">
+                    <div class="px-3 moonicon1">
+                        <span class="bi bi-moon text-white fs-4 "></span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#centernav"
+                        aria-controls="centernav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="bi bi-list"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="centernav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog Page</a></li>
+                                <li><a class="dropdown-item" href="#">Element Page</a></li>
+                                <li><a class="dropdown-item" href="#">Email Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="icon">
+                        <span class="fa-solid fa-search"></span>
+                    </div>
+                    <div class="px-3 moonicon2">
+                        <span class="bi bi-moon text-white fs-4 "></span>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="homepage">
+        <div id="sliderbtn" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#sliderbtn" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#sliderbtn" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#sliderbtn" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active slider1">
+                    <div class="container">
+                        <p>real estate is our life</p>
+                        <h1>the creativity of the new world</h1>
+                        <button class="btn btnorange">read more <span
+                                class="fa-solid fa-angle-double-right"></span></button>
+                    </div>
+                </div>
+                <div class="carousel-item slider2">
+                    <div class="container">
+                        <p>real estate is our life</p>
+                        <h1>the creativity of the new world</h1>
+                        <button class="btn btnorange">read more <span
+                                class="fa-solid fa-angle-double-right"></span></button>
+                    </div>
+                </div>
+                <div class="carousel-item slider3">
+                    <div class="container">
+                        <p>real estate is our life</p>
+                        <h1>the creativity of the new world</h1>
+                        <button class="btn btnorange">read more <span
+                                class="fa-solid fa-angle-double-right"></span></button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#sliderbtn" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sliderbtn" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ====================== */
+header .icon{
+    padding: 7px 12px;
+    background: white;
+    border-radius: 5px;
+    color: #e9280e;
+}
+header h3 {
+    color: white;
+}
+header h3 span{
+    color: #e9280e;
+}
+header ul{
+    justify-content: center;
+    width: 70%;
+}
+header .navbar-toggler{
+    background-color: #e9280e;
+    color: white;
+    font-size: 22px;
+}
+header .navbar-toggler:focus{
+    box-shadow: none;
+}
+.homepage .slider1{
+    background: url(../images/banner1.jpg) no-repeat  center;
+    background-size: cover;
+}
+.homepage .slider2{
+    background: url(../images/banner2.jpg) no-repeat  center;
+    background-size: cover;
+}
+.homepage .slider3{
+    background: url(../images/banner3.jpg) no-repeat  center;
+    background-size: cover;
+}
+.btnorange{
+    background-color: #e9280e;
+    color: white;
+    border: 1px solid #e9280e;
+}
+.btnorange:hover{
+ background-color: #e9280e;
+    color: white;
+    border: 1px solid #e9280e;
+}
+.homepage .carousel-item{
+    padding: 120px 0px;
+}
