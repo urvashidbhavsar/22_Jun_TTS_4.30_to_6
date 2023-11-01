@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ====================== */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+}
+.headerFixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+}
+.headerFixed h3{
+    color: black;
+}
+.headerFixed .nav-link{
+    color: black !important;
+}
+.headerFixed .moonicon2 span{
+    color:black !important
+}
+.headerFixed .moonicon1 span{
+    color: black !important;
+}
+.headerFixed .icon{
+    padding: 7px 12px;
+    background: #e9280e;
+    border-radius: 5px;
+    color: white;
+    width: fit-content;
+
+}
+.headerFixed .icon a{
+    color: white;
+}
+header .icon{
+    padding: 7px 12px;
+    background: white;
+    border-radius: 5px;
+    width: fit-content;
+}
+header .icon a{
+    color: #e9280e;
+}
+header h3 {
+    color: white;
+}
+header h3 span{
+    color: #e9280e;
+}
+header ul{
+    justify-content: center;
+    width: 70%;
+}
+header .navbar-toggler{
+    background-color: #e9280e;
+    color: white;
+    font-size: 22px;
+}
+header .navbar-toggler:focus{
+    box-shadow: none;
+}
+.homepage .slider1{
+    background: url(../images/banner1.jpg) no-repeat  center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.homepage .slider2{
+    background: url(../images/banner2.jpg) no-repeat  center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.homepage .slider3{
+    background: url(../images/banner3.jpg) no-repeat  center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.homepage .slider1::after, .slider2::after, .slider3::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+.homepage .sliders{
+    padding: 120px 0px;
+}
+.btnorange{
+    background-color: #e9280e;
+    color: white;
+    border: 1px solid #e9280e;
+    text-transform: capitalize;
+}
+.btnorange:hover{
+ background-color: #e9280e;
+    color: white;
+    border: 1px solid #e9280e;
+}
+.homepage .carousel-item{
+    padding: 60px 0px;
+}
+.homepage .sliders p{
+    text-transform: uppercase;
+}
+.homepage .sliders h1{
+    font-size: calc(2.5vw + 20px);
+    text-transform: capitalize;
+}
+.GallImage .imgscale{
+    overflow: hidden;
+    border-radius: 7px;
+}
+.GallImage .imgscale img{
+    transition: 1s ease-in-out all;
+}
+.GallImage .imgscale:hover img{
+    scale: 1.1;
+}
+.GallImage a{
+    color: var(--bs-dark);
+    transition: 0.4s ease all;
+}
+.GallImage a:hover{
+    color: #e9280e;
+}
+.card .card-body img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+ul.pagination li{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: none;
+}
+ul.pagination li .page-link{
+    color: black !important;
+}
+footer .icon{
+    height : 30px;
+    width: 30px;
+    background-color: #e9280e;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+}
+.offcanvas {
+    background: rgba(0, 0, 0, 0.668);
+}
+.closebtn{
+    height: 40px;
+    width: 40px;
+    background-color: #e9280e;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+.offcanvas.offcanvas-top {
+    height: 55vh;
+}
