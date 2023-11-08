@@ -1,0 +1,34 @@
+.Title {
+  font-size: 23.577px;
+  font-family: "Calistoga";
+  color: #835e3f;
+  line-height: 1.06;
+}
+.Body_Text {
+  font-size: 55.442px;
+  font-family: "Nunito";
+  color: rgb(131, 94, 63);
+  line-height: 1.2;
+  text-align: left;
+}
+.Order_Now {
+  font-size: 5.334px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  -moz-transform: matrix( 4.6992563990488,0,5.67900010747054e-16,4.68704872078305,0,0);
+  -webkit-transform: matrix( 4.6992563990488,0,5.67900010747054e-16,4.68704872078305,0,0);
+  -ms-transform: matrix( 4.6992563990488,0,5.67900010747054e-16,4.68704872078305,0,0);
+  position: absolute;
+  left: 230.5px;
+  top: 656.3px;
+  z-index: 265;
+}
+.color{
+  color: #ffc77c;
+  color: #ffb758;
+  color: #ff8228;
+}
