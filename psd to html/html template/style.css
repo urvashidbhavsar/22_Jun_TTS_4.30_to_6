@@ -1,0 +1,90 @@
+@import url(mediaQuery.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* font family */
+@font-face {
+    font-family: "Calistoga";
+    src: url(Calistoga/Calistoga-Regular.ttf);
+}
+@font-face {
+    font-family: "Nunito",sans-serif;
+    src: url(Nunito/static/Nunito-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Calistoga";
+}
+body{
+    font-family: "Nunito",sans-serif;
+}
+button{
+    font-family: "Montserrat",sans-serif;
+}
+/* =========================== */
+header .navbar .nav ul{
+    display: flex;
+    gap: 65px;
+}
+header .navbar img{
+    height: 70px;
+    width: 70px;
+}
+header .navbar a{
+    color: #835e3f;
+    font-weight: bold;
+    font-size: 18px;
+}
+.headerSec .banner{
+    background: url(images/banner.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.headerSec .banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#835e3f41;
+    z-index: -1;
+}
+.headerSec h1{
+    font-size: calc(3.5vw + 20px);
+    color: #835e3f;
+    line-height: 1.06;
+}
+.headerSec p{
+    font-size: calc(1vw + 8px);
+    color: #835e3f;
+    line-height: 1.2;
+}
+.headerSec button{
+   padding: 10px 40px;
+   color: white;
+   background-color: #716c53;
+   border-radius: 4px;
+   border: none;
+   text-transform: uppercase;
+}
+.headerSec{
+    position: relative;
+}
+.headerSec svg{
+    position: absolute;
+    bottom: 0;
+    left: -12px;
+    width: 100%;
+    z-index: 2;
+}
+.headerSec path{
+    fill: white;
+}
