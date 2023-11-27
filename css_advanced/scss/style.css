@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imageScale {
+  height: auto;
+  width: 400px;
+  border: 1px solid black;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+}
+.imageScale .image img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  transition: 0.3s ease-in-out;
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+}
+.imageScale:hover img {
+  transform: scale(1.1);
+}
+.imageScale .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  display: grid;
+  place-content: center;
+}/*# sourceMappingURL=style.css.map */

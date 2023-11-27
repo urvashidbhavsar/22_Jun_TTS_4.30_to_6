@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// create variable 
+@height-auto:auto;
+@width-1:100px;
+@width-4:400px;
+.imageScale{
+    height: @height-auto;
+    width: @width-4;
+    border: 1px solid black;
+    margin:50px auto;
+    overflow: hidden;
+    position: relative;
+    
+    .image{
+        img{
+            height: @height-auto;
+            max-width: 100%;
+            vertical-align: middle;
+            transition: .3s ease-in-out;
+            filter: brightness(50%);
+            -webkit-filter: brightness(50%);
+        }
+    } 
+
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
+    .text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: white;
+        display: grid;
+        place-content: center;
+    }
+}

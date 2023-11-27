@@ -1,0 +1,27 @@
+less = leaner style sheet 
+mainly created in js.
+
+use cdn for create less css.
+website : https://lesscss.org/
+
+remember less and scss always run on live server
+use pseudo element and class with &:
+rules : 
+.parentClass-1{
+    .childClass-1{
+        .childClass-2{
+
+        }
+    }
+    .childclass-3{
+
+    }
+}
+
+
+sass = syntactically Awesome Stylesheet
+scss = syntactically cascading Stylesheet
+
+we cant link scss in html file.
+from extension download sass compiler 
+name : live sass compiler
