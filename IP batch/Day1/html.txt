@@ -25,31 +25,32 @@
 => 3 type 
 
 (10) which input type updated in html5?
-=>  
+=>  date, month, url, search, color, week, time, datetime, datetime-local, range
 
 (11) use of <picture> tag.
-=> 
+=> image alternate/change at a time of responsive.
 
 (12) if we apply background image without css?
-=> 
+=> yes in body tag using background attribute but it is non conforming attribute.
 
 (13) what is a use of <datalist> tag? 
-=>  
+=>  use to give suggession list in input type.
 
 (14) difference between dropdown list and datalist? 
-=> 
+=> dropdown list show you a list as a physical way but datalist show you as suggession list.
 
 (15) full form SVG? 
-=> ------- ----------- graphics 
+=> Scalable Vector graphics 
 
 (16) which tag are void tag / non closing tag? 
 => <img>, <link>, <meta>, <br>, <hr>, <input> 
 
 (17) what is difference between <iframe> and <embed> tag?
-=>  
+=>  <iframe> show you another window in your webpage.
+while embed tag display your content on webpage. like, audio, video etc
 
 (18) what is imagemap? 
-=> 
+=> imagemap used to apply link on image some shapes.
 
 (19) which tag are used in html layout? 
 => <header>, <footer>, <section>, <main>, <nav>, <aside>, <article>, <div> etc
