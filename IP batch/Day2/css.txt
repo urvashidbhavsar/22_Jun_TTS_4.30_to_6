@@ -5,10 +5,11 @@
 => inline 
 
 (3) type of gradient color?
-=> 
+=> 3 type = linear, radial, conic 
 
 (4) what is a diffennt between font size vw and vh?
-=>
+=> vw = viewport width = cover width as per device size.
+=> vh = viewport height = cover height as per device change height
 
 (5) 1rem = --px?
 => 16px
@@ -17,22 +18,22 @@
 => background-clip effected on content related. while background-origin effected background image related.
 
 (7) use of z-index ?
-=> 
+=> z-index set element priority.
 
 (8) position property values?
 => sticky, fixed, relative, absolute, static 
 
 (9) which property are only effected with position?
-=>  
+=>  top, right, bottom, z-index, left 
 
 (10) use of max-width?
-=> 
+=>  cover auto width as per device size.
 
 (11) how many set alignment of any text? 
-=> 
+=> center, left, right , justify
 
 (12) if we set margin=auto what effect show in particular element?
-=> 
+=>  take an auto margin from left and right. make content in center of page.
 
 (13) we can set background image in div.
 css :

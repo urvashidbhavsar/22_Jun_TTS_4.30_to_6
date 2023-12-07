@@ -1,0 +1,40 @@
+(1) display property values are ?
+=> flex, grid, block, none, inline, inline-block, table
+
+(2) which property are only effected when we apply display flex? 
+=> flex-wrap, gap, justify-content, align-items, flex-direction, order, flex, flex-grow, flex-shrink, flex-basis, flex-flow, place-item,
+
+(3) which property are only effected when we apply display grid?
+=> grid-column-start, grid-column-end, grid-row-start, grid-row-end, grid,  grid-template-row, grid-template-column, place-item, grid-area.
+
+(4) what is use of flex property?
+=> 
+
+(5) what effect show when we apply place-content center?
+=> it make content center horizontally as well as vertically but before we need to make a div and apply grid.
+
+(6) what is diffrent between display none or visibility hidden?
+=> when we apply display none= content would be totally hide from area.
+visibility hidden = content can show but thier are will visible.
+
+(7) when we use backface-visibility?
+when we apply transform rotateX or rotateY 
+
+(8) what is meaning of transition?
+=> 
+
+(9) what is default scale of an element?
+=> 
+
+(10) how we create animation?
+=> 
+
+(11) how to set flipping effect on an element?
+=> 
+
+(12) how to make responsive website?
+=> using @media screen{}
+
+(13) less fullform  = leaner stylesheet
+ 
+(14) sass fullform = syntactically awesome stylesheet
